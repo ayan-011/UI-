@@ -11,7 +11,7 @@ This project focuses on building a clean, responsive, and modern user interface.
  >Mobile-first design, 
  >Interactive hover effects,
  >Clean & minimal design, 
- >Reusable components (if React/Vue)
+ >Reusable components (React)
  
  
 ## Still i'm working on it.
