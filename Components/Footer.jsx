@@ -6,7 +6,10 @@ const  Footer = () => {
          
          <div className="text w-full h-1/3   text-white text-center p-15  flex flex-col gap-10">
          <div className="heading text-3xl font-semibold ">Lorem ipsum dolor sit amet consectetur.</div>
-          <button>Button</button>
+
+         <div className="button">
+            <button className=" md:p-3 md:px-10 p-2 px-6 rounded outline-zinc-700  outline-[1px]   bg-zinc-900  hover:bg-white hover-black  transition-all duration-200 cursor-pointer">Get started</button>
+         </div>
          </div>
          <div className="sections w-full flex h-full justify-center px-8  ">
             <div className="firstCol   w-1/4   h-full p-10  leading-8 text-lg  text-zinc-300">
