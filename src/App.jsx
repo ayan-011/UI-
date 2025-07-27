@@ -7,7 +7,7 @@ import Home from './pages/home'
  
  const App = () => {
    return (
-     <div className='bg-[#424242]'>
+     <div  data-scroll-container className='bg-[#424242]'>
       
       <Routes> 
         <Route element={<Home/>} path='/'/>

@@ -5,7 +5,7 @@ import Giphy from '../../Gif/Giphy'
 
 const Page1 = () => {
   return (
-    <div className='w-full  h-  bg-[#424242]'>
+    <div data-scroll data-scroll-speed="1" className='w-full  h-  bg-[#424242]'>
         
   <First/>
   <Second/>

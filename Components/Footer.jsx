@@ -2,7 +2,7 @@ import React from 'react'
 
 const  Footer = () => {
   return (
-    <div className='w-full flex flex-col  rounded-t-[90px] bg-black '>
+    <div data-scroll data-scroll-speed="2" className='w-full flex flex-col  rounded-t-[90px] bg-black '>
          
          <div className="text w-full h-1/3   text-white text-center p-15  flex flex-col gap-10">
          <div className="heading text-3xl font-semibold ">Lorem ipsum dolor sit amet consectetur.</div>
