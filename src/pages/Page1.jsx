@@ -1,4 +1,7 @@
 import React from 'react'
+import Monkey1 from '../../Gif/Monkey1'
+import Monkey2 from '../../Gif/Monkey2'
+import Giphy from '../../Gif/Giphy'
 
 const Page1 = () => {
   return (
@@ -25,7 +28,9 @@ function First() {
                 <p className="text text-left text-xl text-white p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem consectetur officiis laboriosam eaque odio veniam.</p>
             </div>
             <div className="Image w-1/2 p-10">
-                <img src="/data.png" alt="" className='w-5/6  ' />
+                <div className="monkey  flex justify-center">
+                    <Monkey1/>
+                </div>
             </div>
           </div>
 
@@ -41,12 +46,14 @@ function Second() {
           <div className="w-full p-10  ">
           
           <div className="w-full flex  items-center ">
+            <div className="Image w-1/2 p-10">
+                  <div className="monkey  flex justify-center">
+                    <Monkey2/>
+                </div>
+            </div>
             <div className="text w-1/2  text-center  p-15  bg-red-90">
                 <span className="heading text-center text-3xl text-white font-semibold">Heading</span>
                 <p className="text text-left text-xl text-white p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem consectetur officiis laboriosam eaque odio veniam.</p>
-            </div>
-            <div className="Image w-1/2 p-10">
-                <img src="/data.png" alt="" className='w-5/6  ' />
             </div>
           </div>
 
@@ -68,7 +75,9 @@ function Third() {
                 <p className="text text-left text-xl text-white p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem consectetur officiis laboriosam eaque odio veniam.</p>
             </div>
             <div className="Image w-1/2 p-10">
-                <img src="/data.png" alt="" className='w-5/6  ' />
+                <div className="monkey  flex justify-center">
+                    <Giphy/>
+                </div>
             </div>
           </div>
 
