@@ -2,7 +2,7 @@ import React from 'react'
 
 const Monkey2 = () => {
   return (
-    <div><div className="flex flex-col rounded-xl  p-4"
+    <div><div className="flex flex-col rounded-xl  p-4 shadow-2xl shadow-zinc-950"
     style={{
       border: '0.88px solid',
     

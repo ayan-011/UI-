@@ -2,7 +2,7 @@ import React from 'react'
 
 const Giphy = () => {
   return (
-    <div className="w-60   rounded-xl flex flex-col  overflow- ">
+    <div className="w-60   rounded-xl flex flex-col  shadow-2xl shadow-zinc-950">
        
 
     <img
@@ -13,7 +13,7 @@ const Giphy = () => {
     
         
 
-        <div className="text-white w-full p-5 bg-black rounded-b-xl">Comming soon</div>
+        <div className="text-white w-full p-5 bg-zinc-900 rounded-b-xl">Comming soon</div>
   </div>
   )
 }

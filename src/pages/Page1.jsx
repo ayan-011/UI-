@@ -20,7 +20,7 @@ export default Page1
 function First() {
     return (
         <>
-          <div className="w-full p-10   ">
+          <div className="w-full p-10  px-32 ">
           
           <div className="w-full flex  items-center ">
             <div className="text w-1/2  text-center  p-15  bg-red-90">
@@ -43,7 +43,7 @@ function First() {
 function Second() {
     return (
         <>
-          <div className="w-full p-10  ">
+          <div className="w-full p-10 px-32 ">
           
           <div className="w-full flex  items-center ">
             <div className="Image w-1/2 p-10">
@@ -67,7 +67,7 @@ function Second() {
 function Third() {
     return (
         <>
-          <div className="w-full p-10  ">
+          <div className="w-full p-20 px-32  ">
           
           <div className="w-full flex  items-center ">
             <div className="text w-1/2  text-center  p-15  bg-red-90">
