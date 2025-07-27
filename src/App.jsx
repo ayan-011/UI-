@@ -7,7 +7,7 @@ import Home from './pages/home'
  
  const App = () => {
    return (
-     <div>
+     <div className='bg-[#424242]'>
       
       <Routes> 
         <Route element={<Home/>} path='/'/>

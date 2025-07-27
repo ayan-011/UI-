@@ -1,12 +1,15 @@
 import React from 'react'
 import Nav from '../../Components/nav'
 import Page1 from './Page1'
+import Footer from '../../Components/Footer'
 
 const Home = () => {
   return (
     <>
     <div className=' custom-gradient w-full txt-white select-none md:h-[160vh] h-[90vh]  iPhone5se'> 
       <Nav/>
+
+          {/* Tagline */}
       <div className=" w-full md:p-4 py-8 bg-red-90 flex flex-col items-center justify-center gap-y-20">
         <div className='text-center w-full'>
         <div className="tagline md:text-[40px] text-[25px] w-full font-semibold">Your Data. Your Control.</div>
@@ -29,6 +32,8 @@ const Home = () => {
     
 
     <Page1/>
+    
+    <Footer/>
     
     </>
   )
