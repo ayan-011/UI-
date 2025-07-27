@@ -1,8 +1,10 @@
 import React from 'react'
 import Nav from '../../Components/nav'
+import Page1 from './Page1'
 
 const Home = () => {
   return (
+    <>
     <div className=' custom-gradient w-full txt-white select-none md:h-[160vh] h-[90vh]  iPhone5se'> 
       <Nav/>
       <div className=" w-full md:p-4 py-8 bg-red-90 flex flex-col items-center justify-center gap-y-20">
@@ -24,6 +26,11 @@ const Home = () => {
     </div>
 
      </div>
+    
+
+    <Page1/>
+    
+    </>
   )
 }
 
