@@ -66,3 +66,7 @@ body, html {
 .custom-gradient { 
   background: linear-gradient(to bottom, black 10%, #1a1a1b 40%, #424242 100%);
 }
+
+.custom-gradient-2 { 
+  background: linear-gradient(to bottom, #242424 10%, #1a1a1b 20%, black 70%);
+}
