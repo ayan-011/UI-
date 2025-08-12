@@ -23,7 +23,7 @@ const Home = () => {
     <div className="image w-full  md:mt-10 bg-red-90 flex md:items-center md:justify-center">
         <div className='md:w-1/2 md:p-0 p-2  flex md:justify-center md:items-center gap-2 flex-col bg-red-90  text-center '>
 
-        <img src="/data.png" alt="" className='  md:w-[80vh] w-full shadow-zinc-900   drop-shadow-2xl pointer-events-none select-none' />
+        <img src="data.png" alt="" className='  md:w-[80vh] w-full shadow-zinc-900   drop-shadow-2xl pointer-events-none select-none' />
         <div className='tracking-tight md:text-[16px] text-[12px]'>Random image to make the UI interactive.</div>
         </div>
     </div>
