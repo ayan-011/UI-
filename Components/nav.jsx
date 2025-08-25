@@ -1,5 +1,9 @@
-import React from 'react'
-import App from '../src/App'
+import { Link } from "react-router-dom"
+
+ 
+ 
+
+ 
 
 const Nav = () => {
   return (
@@ -10,8 +14,16 @@ const Nav = () => {
 
     {/* Buttons  */}
         <div className="buttons md:flex hidden md:gap-8 items-center">
+            <Link to="/docs">
             <div className="docs">Docs</div>
-            <div className="code">Code</div>
+            </Link>
+           <a 
+  href="https://github.com/ayan-011/UI-" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <div className="code">Code</div>
+</a>
             <div className="about">About</div>
 
             <button className="Install  md:p-1.5 md:px-5 rounded outline-white hover-outline-zinc  outline-[1px]  hover-bg-white hover-black transition-all duration-100 cursor-pointer">Install</button>
