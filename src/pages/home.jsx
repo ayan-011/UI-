@@ -6,7 +6,7 @@ import Footer from '../../Components/Footer'
 const Home = () => {
   return (
     <>
-    <div className=' custom-gradient w-full txt-white select-none md:h-[160vh] h-[90vh]  iPhone5se'> 
+    <div className=' custom-gradient w-full  txt-white select-none md:h-[160vh] h-fit iPhone5se'> 
       <Nav/>
 
           {/* Tagline */}
@@ -15,12 +15,12 @@ const Home = () => {
         <div className="tagline md:text-[40px] text-[25px] w-full font-semibold">Your Data. Your Control.</div>
         <div className="tagline md:py-2 tracking-tight font-extralight md:text-[16px]  text-[12px]">UI in Progress. Learning Never Stops.</div> 
         </div>
-           <button className=" md:p-3 md:px-10 p-2 px-6 rounded outline-zinc-700  outline-[1px]   bg-zinc-900  hover:bg-white hover-black  transition-all duration-200 cursor-pointer">Get started</button>
+           <button className=" md:p-3 md:px-10 p-2 px-6 rounded outline-zinc-700  outline-[1px]      md:hover:bg-zinc-100 md:hover:text-black transition-all duration-200  cursor-pointer">Get started</button>
       </div>
 
 
 {/* Image  */}
-    <div className="image w-full  md:mt-10 bg-red-90 flex md:items-center md:justify-center">
+    <div className="image w-full    md:mt-10 bg-red-90 flex md:items-center md:justify-center">
         <div className='md:w-1/2 md:p-0 p-2  flex md:justify-center md:items-center gap-2 flex-col bg-red-90  text-center '>
 
         <img src="data.png" alt="" className='  md:w-[80vh] w-full shadow-zinc-900   drop-shadow-2xl pointer-events-none select-none' />
@@ -30,8 +30,11 @@ const Home = () => {
 
      </div>
     
+<div className='w-full overflow-hidden'>
 
     <Page1/>
+
+</div>
     
     <Footer/>
     
