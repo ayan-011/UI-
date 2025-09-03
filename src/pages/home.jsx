@@ -7,7 +7,7 @@ import Page2 from './page2'
 const Home = () => {
   return (
     <>
-    <div className=' custom-gradient w-full  txt-white select-none md:h-[160vh] h-fit iPhone5se'> 
+    <div className=' custom-gradient w-full  txt-white select-none md:h-[160vh] h-screen iPhone5se'> 
       <Nav/>
 
           {/* Tagline */}

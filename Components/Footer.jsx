@@ -13,7 +13,7 @@ const  Footer = () => {
          </div>
 
          <div className="sections w-full flex h-full justify-center md:px-8 p-5  ">
-            <div className="firstCol   md:w-1/4  w-full h-full md:p-10  md:leading-8 md:text-lg  text-zinc-300  text-sm leading-6">
+            <div className="firstCol   md:w-1/4  w-full h-full md:p-10  md:leading-8 md:text-lg  text-zinc-300  text-[10px] leading-4">
             <div>
                 <div>Getting Started</div>
                 <div>Contributing</div>
@@ -21,14 +21,14 @@ const  Footer = () => {
                 <div>FAQ</div>
             </div>
             </div>
-            <div className="firstCol   md:w-1/4 w-full  h-full md:p-10 md:px-0 px-  md:leading-8  md:text-lg  text-zinc-300 flex justify-center  text-sm  bg-red-9">
-            <div className='md:ml-0 ml-6 leading-6'>
+            <div className="firstCol   md:w-1/4 w-full  h-full md:p-10 md:px-0 px-  md:leading-8  md:text-lg  text-zinc-300 flex justify-center  text-[10px]  bg-red-9">
+            <div className='md:ml-0 ml-6 leading-4'>
                 <div>Documentation</div>
                 <div>Releases</div>
                 <div>License</div> 
             </div>
             </div>
-            <div className="firstCol  md:w-1/4  w-full h-full md:p-10  md:leading-8 md:text-lg  text-zinc-300  flex justify-end  text-sm bg-red-9 leading-6">
+            <div className="firstCol  md:w-1/4  w-full h-full md:p-10  md:leading-8 md:text-lg  text-zinc-300  flex justify-end text-[10px] leading-4">
             <div className='te'>
                 <div>YouTube</div>
                 <div>Github</div>
