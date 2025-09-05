@@ -22,7 +22,7 @@ const  Footer = () => {
             </div>
             </div>
             <div className="firstCol   md:w-1/4 w-full  h-full md:p-10 md:px-0 px-  md:leading-8  md:text-lg  text-zinc-300 flex justify-center  text-[10px]  bg-red-9">
-            <div className='md:ml-0 ml-6 leading-4'>
+            <div className='md:ml-0 ml-6 leading-4 md:leading-8'>
                 <div>Documentation</div>
                 <div>Releases</div>
                 <div>License</div> 

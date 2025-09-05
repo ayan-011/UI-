@@ -1,83 +1,63 @@
 const Page1 = () => {
+  const sections = [
+    {
+      id: 1,
+      img: "1.png",
+      text: "No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.",
+      reverse: false,
+    },
+    {
+      id: 2,
+      img: "2.png",
+      text: "No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.",
+      reverse: true,
+    },
+    {
+      id: 3,
+      img: "3.png",
+      text: "No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.",
+      reverse: false,
+    },
+  ];
+
   return (
-    <div className='w-full md:bg-[#424242] bg-zinc-200 pointer-events-none text-black md:text-white   py-10  flex flex-col gap-5 '>
-        
-  <First/>
-  <Second/> 
-  <Third/>
-  
-
+    <div className="w-full lg:bg-[#424242] bg-zinc-200 pointer-events-none text-black lg:text-white py-1 flex flex-col gap-10  ">
+      {sections.map((section) => (
+        <Section key={section.id} {...section} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Page1
-
- 
+export default Page1;
 
 
-function First() {
- return(
-     <div className=' w-full md:h-screen h-fit md:py-0 py-5 items-center flex md:flex-row flex-col md:gap-0 '>
-        <div className='md:w-1/2  md:h-full h-1/3  bg-red-90  flex md:items-center md:px-28 items-end '>
-        <div className='   flex flex-col  md:p-2 p-4 mt-16 gap-7'>
-            <p className="heading md:text-4xl text-4xl  md:font-bold  text-start "> <span className="font-light ">Completely</span> decentralized.</p>
-            <p className='md:mt-8 md:text-xl   tracking-tight leading-tight text-[14px]'>No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.</p>
+// Reusable Section
+function Section({ img, text, reverse }) {
+  return (
+    <div
+      className={`w-full min-h-[70vh]  lg:bg- md:min-h-[40vh]  xl:min-h-[70vh] lg:py-14 flex flex-col lg:flex-row md:flex-row items-center  ${
+        reverse ? "lg:flex-row-reverse md:flex-row-reverse" : ""
+      }`}
+    >
+      {/* Text Block */}
+      <div className="w-full md:w-1/2 lg:w-1/2 h-auto lg:h-full flex items-center lg:px-20   ">
+        <div className="flex flex-col gap-6  lg:w-full p-9  ">
+          <p className="heading text-3xl sm:text-2xl md:text-4xl lg:text-5xl  font-semibold   gap-2 text-start">
+            <span className="font-light">Completely</span> decentralized.
+          </p>
+          <p className=" sm:text-base md:text-lg  lg:text-xl leading-tight md:leading-relaxed lg:leading-relaxed tracking-tight">
+            {text}
+          </p>
         </div>
+      </div>
+
+      {/* Image Block */}
+      <div className="w-full md:w-1/2 lg:w-1/2 h-auto lg:h-full flex items-center justify-center px-6 lg:px-0 ">
+        <div className="card w-full sm:w-3/4 md:w-2/3 lg:w-2/3 aspect-square flex items-center justify-center">
+          <img src={img} alt={`section-${img}`} className="w-full h-full object-contain" />
         </div>
-        <div className='md:w-1/2 md:h-full h-1/2 bg-zinc-30 flex md:items-center items-start justify-center'>
-           <div className="card w-2/3  h-2/3 bg-red-90 ">
-<img src="1.png" alt="" />
-           </div>
-        </div>
+      </div>
     </div>
- )
-}
-
-
-function Second() {
- return(
-     <div className=' w-full md:h-screen h-fit md:py-0 py-5 items-center flex md:flex-row flex-col md:gap-0 '>
-        <div className='md:hidden md:w-1/2  md:h-full h-1/3  bg-red-90  flex md:items-center md:px-28 items-end '>
-        <div className='   flex flex-col  md:p-2 p-4 mt-16 gap-7 '>
-            <p className="heading md:text-4xl text-4xl  md:font-bold  text-start "> <span className="font-light ">Completely</span> decentralized.</p>
-            <p className='md:mt-8 md:text-xl   tracking-tight leading-tight text-[14px]'>No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.</p>
-        </div>
-        </div>
-
-
-        <div className='md:w-1/2 md:h-full h-1/2 bg-zinc-30 flex md:items-center items-start justify-center '>
-           <div className="card w-2/3  h-2/3 bg-red-90 ">
-<img src="2.png" alt="" />
-           </div>
-        </div>
-
-         <div className='hidden  md:w-1/2  md:h-full h-1/3  bg-red-90  md:flex md:items-center md:px-28 items-end '>
-        <div className='   flex flex-col  md:p-2 p-4 mt-16'>
-            <p className="heading md:text-4xl text-4xl  md:font-bold  text-start "> <span className="font-light ">Completely</span> decentralized.</p>
-            <p className='md:mt-8 md:text-xl   tracking-tight leading-tight text-[14px]'>No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.</p>
-        </div>
-        </div>
-    </div>
- )
-}
-
-
-
-function Third() {
- return(
-    <div className=' w-full md:h-screen h-fit md:py-0 py-5 items-center flex md:flex-row flex-col md:gap-0 '>
-        <div className='md:w-1/2  md:h-full h-1/3  bg-red-90  flex md:items-center md:px-28 items-end '>
-        <div className='   flex flex-col  md:p-2 p-4 mt-16 gap-7'>
-            <p className="heading md:text-4xl text-4xl  md:font-bold  text-start "> <span className="font-light ">Completely</span> decentralized.</p>
-            <p className='md:mt-8 md:text-xl   tracking-tight '>No central coordinator. No central point of failure. Your node, your rules, your sats, your privacy. Made possible by the market.</p>
-        </div>
-        </div>
-        <div className='md:w-1/2 md:h-full h-1/2 bg-zinc-30 flex md:items-center items-start justify-center'>
-           <div className="card w-2/3  h-2/3 bg-red-90 ">
-<img src="3.png" alt="" />
-           </div>
-        </div>
-    </div>
- )
+  );
 }
