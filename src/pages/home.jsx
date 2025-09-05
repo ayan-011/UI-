@@ -7,7 +7,7 @@ import Page2 from './page2'
 const Home = () => {
   return (
     <>
-    <div className=' custom-gradient xl:bg-zinc-200  w-full  txt-white select-none h-fit   iPhone5se '> 
+    <div className=' custom-gradient xl:bg-zinc-200  w-full  txt-white select-none h-screen sm:h-fit md:h-fit lg:h-fit xl:h-fit   iPhone5se '> 
       <Nav/>
 
           {/* Tagline */}
@@ -38,7 +38,7 @@ const Home = () => {
      </div>
 
 
-    <div className="lg:bg-[#424242] bg-zinc-200  w-full lg:py-14 xl:flex  hidden"></div>
+    <div className="lg:bg-[#424242]   w-full lg:py-14 p-4  xl:flex  hidden"></div>
 <div className='w-full overflow-hidden'>
 
     <Page1  />
